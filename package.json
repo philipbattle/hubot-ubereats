@@ -1,0 +1,38 @@
+{
+  "name": "hubot-ubereats",
+  "description": "A hubot script that lists today's  meals on Ubereats.es",
+  "version": "0.0.1",
+  "author": "Philip Battle <philipbattle@hotmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "lodash": "*",
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "_npmUser": {
+    "name": "philipbattle",
+    "email": "philipbattle@hotmail.com"
+  },
+  "maintainers": [
+    "philipbattle <philipbattle@hotmail.com>"
+  ],
+}
