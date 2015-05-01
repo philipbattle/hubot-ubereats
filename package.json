@@ -1,38 +1,41 @@
 {
   "name": "hubot-ubereats",
-  "description": "A hubot script that lists today's  meals on Ubereats.es",
-  "version": "0.0.1",
-  "author": "Philip Battle <philipbattle@hotmail.com>",
-  "license": "MIT",
+  "version": "0.0.2",
+  "description": "A hubot script lists today's meals at Ubereats.es",
+  "main": "index.coffee",
   "keywords": [
     "hubot",
     "hubot-scripts"
   ],
   "dependencies": {
-    "coffee-script": "~1.6"
+    "chai": "^2.3.0",
+    "cheerio": "^0.19.0",
+    "grunt-cli": "^0.1.13",
+    "lodash": "^3.7.0",
+    "grunt": "^0.4.5",
+    "matchdep": "^0.1.2",
+    "sinon-chai": "^2.7.0",
+    "grunt-mocha-test": "^0.7.0",
+    "sinon": "^1.14.1",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-release": "^0.6.1"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-mocha-test": "~0.7.0",
-    "grunt-release": "~0.6.0",
-    "matchdep": "~0.1.2",
-    "lodash": "*",
-    "mocha": "*",
-    "chai": "*",
-    "sinon": "*",
-    "sinon-chai": "*"
+    "coffee-script": "^1.6.3",
+    "mocha": "^2.2.4"
   },
-  "main": "index.coffee",
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha"
   },
-  "_npmUser": {
-    "name": "philipbattle",
-    "email": "philipbattle@hotmail.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipbattle/hubot-ubereats.git"
   },
-  "maintainers": [
-    "philipbattle <philipbattle@hotmail.com>"
-  ],
+  "author": "Philip Battle <philipbatte@hotmail.com> (http://philipbattle.co.uk/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipbattle/hubot-ubereats/issues"
+  },
+  "directories": {},
+  "homepage": "https://github.com/philipbattle/hubot-ubereats"
 }
