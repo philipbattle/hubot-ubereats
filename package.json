@@ -1,6 +1,6 @@
 {
   "name": "hubot-ubereats",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A hubot script lists today's meals at Ubereats.es",
   "main": "index.coffee",
   "keywords": [

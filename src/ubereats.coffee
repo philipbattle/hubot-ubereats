@@ -37,13 +37,11 @@ module.exports = (robot) ->
           mealType = meal.tags[0]
 
           if !match || match is mealType
-            $ = cheerio.load(meal.excerpt)
-
             msg.send mealType
+            msg.send cheerio.load(meal.body)('p').text();
             msg.send meal.title
-            msg.send $('p span').first().text();
-            msg.send meal.assetUrl
-            msg.send ""
+            msg.send cheerio.load(meal.excerpt)('p span').first().text();
+            msg.send meal.assetUrl.slice(0, -1) + '.png'
     else
       msg.send "Reading data from Ubereats.es"
   )
